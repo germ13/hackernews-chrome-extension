@@ -1,14 +1,16 @@
 {
-    "name": "hackernews"
-    ,"description": "improves hackernews"
-    ,"version":"1.0"
-    ,"manifest_version": 2
-    ,"browser_action":{
-        "default_popup":"index.html"
-        ,"default_icon":"icon.png"
-    }
-    ,"permissions":[
-        "activeTab"
-        ,"storage"
+    "name": "hackernews",
+    "description": "improves hackernews",
+    "version": "1.0",
+    "manifest_version": 2,
+    "page_action": {
+        "default_icon": {
+            "29": "icon.png"
+        },
+        "default_title": "hackerne.ws",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab", "storage", "history"
     ]
 }
