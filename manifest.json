@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 2,
     "background": {
-        "scripts": ["script.js"],
+        "scripts": ["background.js"],
         "persistent": false
       },
     "page_action": {
@@ -15,5 +15,13 @@
     },
     "permissions": [
         "activeTab", "storage", "history", "declarativeContent"
+    ],
+    "content_scripts":
+    [
+        {
+            "matches": ["*://news.ycombinator.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
     ]
 }
