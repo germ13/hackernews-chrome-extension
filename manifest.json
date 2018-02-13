@@ -8,9 +8,9 @@
             "29": "icon.png"
         },
         "default_title": "hackerne.ws",
-        "default_popup": "popup.html"
+        "default_popup": "index.html"
     },
     "permissions": [
-        "activeTab", "storage", "history"
+        "activeTab", "storage", "history", "declarativeContent"
     ]
 }
