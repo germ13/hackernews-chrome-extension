@@ -3,12 +3,15 @@
     "description": "improves hackernews",
     "version": "1.0",
     "manifest_version": 2,
+    "background": {
+        "scripts": ["script.js"],
+        "persistent": false
+      },
     "page_action": {
         "default_icon": {
-            "29": "icon.png"
+            "32": "spock.png"
         },
-        "default_title": "hackerne.ws",
-        "default_popup": "index.html"
+        "default_title": "hackerne.ws"
     },
     "permissions": [
         "activeTab", "storage", "history", "declarativeContent"
